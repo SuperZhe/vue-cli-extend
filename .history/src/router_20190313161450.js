@@ -11,7 +11,7 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: () => import("./views/login/login.vue") // 惰性加载
+      component: () => import("./views/index.vue") // 惰性加载
     }
   ]
 });
