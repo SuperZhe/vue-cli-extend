@@ -3,7 +3,6 @@ import login from "./login";
 
 //  进行类的属性与方法 ，静态属性与方法拷贝
 function mix(...mixins) {
-  console.log(mixins);
   class Mix {
     constructor() {
       for (let mixin of mixins) {

@@ -12,7 +12,6 @@ class Login extends http {
    * @param [string]  参数：password  描述：password   是否必填 false
    */
   login(params) {
-    console.log("执行登陆");
     return super.post("/login", params);
   }
 }
