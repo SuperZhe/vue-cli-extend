@@ -9,6 +9,10 @@ Vue.config.productionTip = false;
 import api from "./server";
 Vue.use(api);
 
+// 全局方法
+import lib from "./lib";
+Vue.use(lib);
+
 // 全局注册过滤器
 import filters from "./filters";
 Object.keys(filters).forEach(val => {

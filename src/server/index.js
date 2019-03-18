@@ -1,3 +1,4 @@
+// 需要继承得类得引入
 import http from "@/api/http.js";
 import login from "./login";
 
@@ -27,6 +28,7 @@ function copyProperties(target, source) {
     }
   }
 }
+//  需要继承得类得整合
 let apiArray = [http, login];
 
 // 继承所有的类，并写入公用的接口
