@@ -10,7 +10,9 @@ import helloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "login",
   components: { helloWorld },
-  created() {}
+  created() {
+    console.log(this.$api.login());
+  }
 };
 </script>
 

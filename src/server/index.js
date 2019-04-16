@@ -30,7 +30,6 @@ function copyProperties(target, source) {
 }
 //  需要继承得类得整合
 let apiArray = [http, login];
-
 // 继承所有的类，并写入公用的接口
 class ApiList extends mix(...apiArray) {
   constructor() {
