@@ -14,6 +14,20 @@ class Login extends http {
   login(params) {
     return super.post("/login", params);
   }
+  /**
+   * 预登录接口
+   * @param {String} 参数：longinName 名称
+   * @param {String} 参数：password 密码
+   */
+  preLogin(params) {
+    return super.post("/preLogin", params);
+  }
+  /**
+   * 权限接口
+   */
+  getLoginPermission(params) {
+    return super.post("/permFun/getLoginPermission", params);
+  }
 }
 
 // 放出去的出口
