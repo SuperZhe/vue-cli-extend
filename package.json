@@ -11,6 +11,8 @@
     "axios": "^0.18.0",
     "dayjs": "^1.8.10",
     "element-ui": "^2.7.2",
+    "lib-flexible": "^0.3.2",
+    "vant": "^1.6.17",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -23,8 +25,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "https": "^1.0.0",
     "less": "^3.0.4",
     "less-loader": "^4.1.0",
+    "postcss-pxtorem": "^4.0.1",
     "vue-template-compiler": "^2.5.21"
   }
 }
