@@ -3,7 +3,14 @@
     <router-view />
   </div>
 </template>
-
+<script>
+import { error } from 'util'
+export default {
+  mounted() {
+    throw error('vvvvv')
+  }
+}
+</script>
 <style lang="less">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
