@@ -12,6 +12,7 @@ Vue.use(Element);
 // 注册接口插件使用
 import api from "./server";
 Vue.use(api);
+console.log(1111)
 
 // 全局方法
 import lib from "./lib";
