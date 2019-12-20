@@ -16,7 +16,7 @@ import * as Sentry from '@sentry/browser'
 import * as Integrations from '@sentry/integrations'
 
 Sentry.init({
-  dsn: 'https://b7327efacd46@sentry.io/1861773',
+  dsn: 'https://9e9d66afce3a4310bb93e61e3fd79d99@sentry.io/1863066',
   integrations: [new Integrations.Vue({ Vue, attachProps: true })]
 })
 // 全局方法
