@@ -13,6 +13,8 @@ Vue.use(Element);
 import api from "./server";
 Vue.use(api);
 console.log(1111)
+console.log(1111)
+console.log(1111)
 
 // 全局方法
 import lib from "./lib";
