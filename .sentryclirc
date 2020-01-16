@@ -1,0 +1,6 @@
+[defaults]
+url = 'https://sentry.io/'
+org = 'organizations'
+project = 'vue-error'
+[auth]
+token = e6ab19c60ec94cb6b6ebc8a1cd7e795bf3ca300ef08946018b1fbbaefb0dcd92

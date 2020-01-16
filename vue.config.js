@@ -1,5 +1,6 @@
-const path = require("path");
-const resolve = dir => path.join(__dirname, dir);
+const path = require('path')
+const resolve = dir => path.join(__dirname, dir)
+const SentryCliPlugin = require('@sentry/webpack-plugin')
 // 配置开发，生产网址
 // const productionUrl = "";
 // const devUrl = "";
@@ -8,24 +9,33 @@ module.exports = {
   // 该对象将会被 webpack-merge 合并入最终的 webpack 配置。
   chainWebpack: config => {
     config.resolve.alias
-      .set("@", resolve("src"))
-      .set("_c", resolve("src/components/"))
-      .set("_as", resolve("src/assets/img/"));
+      .set('@', resolve('src'))
+      .set('_c', resolve('src/components/'))
+      .set('_as', resolve('src/assets/img/'))
+    config.plugin('provide').use(SentryCliPlugin, [{
+      include: './dist',
+      ignoreFile: '.sentrycliignore',
+      ignore: ['node_modules', 'vue.config.js'],
+      configFile: 'sentry.properties',
+      dryRun: true,
+      release: 'vue-cli 1.0',
+      urlPrefix: '~/js'
+    }])
   },
   // 开发与生产环境不同网址
   // publicPath: process.env.NODE_ENV === "production" ? productionUrl : devUrl,
   devServer: {
     port: 8080, // 端口号
-    host: "localhost",
+    host: 'localhost',
     https: false, // https:{type:Boolean}
     open: true, //配置自动启动浏览器
     // proxy: 'http://localhost:4000' // 配置跨域处理,只有一个代理
     proxy: {
-      "/api": {
-        target: "http://192.168.2.61:8090",
+      '/api': {
+        target: 'http://192.168.2.61:8090',
         ws: true,
         changeOrigin: true
       }
     }
   }
-};
+}

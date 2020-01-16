@@ -4,10 +4,10 @@
   </div>
 </template>
 <script>
-import { error } from 'util'
 export default {
   mounted() {
-    throw error('vvvvv')
+    this.cb()
+    Promise.reject('ceshi=')
   }
 }
 </script>

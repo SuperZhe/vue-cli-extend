@@ -5,18 +5,25 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "vue": "node src/nodePath.js"
   },
   "dependencies": {
-    "@sentry/browser": "^5.10.2",
-    "@sentry/integrations": "^5.10.2",
+    "@sentry/browser": "^5.11.0",
+    "@sentry/integrations": "^5.11.0",
     "axios": "^0.18.0",
+    "chalk": "^3.0.0",
     "dayjs": "^1.8.10",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.1",
+    "path": "^0.12.7",
+    "raven-js": "^3.27.2",
     "vue": "^2.6.6",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@sentry/webpack-plugin": "^1.9.3",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
